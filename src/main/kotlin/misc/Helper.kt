@@ -8,15 +8,6 @@ import java.nio.file.Files
 
 
 object Helper {
-    /*
-    fun copyImage(source: BufferedImage): BufferedImage {
-        val b = BufferedImage(source.width, source.height, source.type)
-        val g = b.graphics
-        g.drawImage(source, 0, 0, null)
-        g.dispose()
-        return b
-    }
-    */
     fun BufferedImage.copy() : BufferedImage{
         val b = BufferedImage(this.width, this.height, this.type)
         val g = b.graphics

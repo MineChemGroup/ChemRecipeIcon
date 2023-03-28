@@ -6,12 +6,5 @@ import kotlin.io.path.createTempDirectory
 
 fun main(args: Array<String>) {
 
-    //Painter.stuff.mkdir()
-
-    //Painter.created.mkdir()
-
     Painter.empty = ImageIO.read(Painter.javaClass.getResource("/empty.png"))
-
-    //Painter.paintAll(Painter.created.toPath())
-    //Painter.paintAll(Painter.created.toPath())
 }
