@@ -5,7 +5,7 @@ import kotlin.io.path.Path
 fun main(args: Array<String>) {
 
     //Painter.empty = ImageIO.read(Painter.javaClass.getResource("/empty.png"))
-    empty = null
+    println("ChemRecipeIcon loaded")
     //for (i in 1..10)
     //    Painter.paintOne(Path(System.getProperty("user.dir")), i)
 }

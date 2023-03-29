@@ -25,6 +25,8 @@ object Painter {
     fun paintOne(path: Path, num : Int){
         val compoundImage = empty?.copy()
 
+        println("painting $num")
+
         val quotient = num / 56
         var remainder = num % 56
 
