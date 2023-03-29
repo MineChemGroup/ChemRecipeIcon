@@ -9,7 +9,7 @@ import javax.imageio.ImageIO
 
 object Painter {
 
-    private var empty : BufferedImage? = null
+    var empty : BufferedImage? = null
 
     //supply empty.png file into here before doing anything
     fun init(file : File){
