@@ -9,7 +9,12 @@ import javax.imageio.ImageIO
 
 object Painter {
 
-    var empty : BufferedImage? = BufferedImage(64,64,6)
+    private var empty : BufferedImage? = null
+
+    //supply empty.png file into here before doing anything
+    fun init(file : File){
+        empty = ImageIO.read(file)
+    }
 
     fun paintAll(path : Path){
         for (i in 1..3136)
