@@ -2,16 +2,14 @@ import misc.ColorEnum
 import misc.Helper.copy
 import misc.Helper.drawFirst
 import misc.Helper.drawSecond
-import java.awt.Color
 import java.awt.image.BufferedImage
 import java.io.File
 import java.nio.file.Path
-import java.util.DoubleSummaryStatistics
 import javax.imageio.ImageIO
 
 object Painter {
 
-    var empty : BufferedImage? = null
+    var empty : BufferedImage? = BufferedImage(64,64,6)
 
     fun paintAll(path : Path){
         for (i in 1..3136)
@@ -28,9 +26,9 @@ object Painter {
         if (quotient == remainder)
             remainder++
 
-        println("drawing $num")
+        //println("drawing $num")
 
-        val compoundFile = File("$path/Compound $num.png")
+        val compoundFile = File("$path/$num.png")
         compoundFile.createNewFile()
 
         val graphics = compoundImage?.graphics

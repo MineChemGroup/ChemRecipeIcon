@@ -1,10 +1,10 @@
-import java.io.File
-import java.net.PasswordAuthentication
-import java.net.URL
 import javax.imageio.ImageIO
-import kotlin.io.path.createTempDirectory
+import kotlin.io.path.Path
 
 fun main(args: Array<String>) {
 
     Painter.empty = ImageIO.read(Painter.javaClass.getResource("/empty.png"))
+
+    //for (i in 1..10)
+    //    Painter.paintOne(Path(System.getProperty("user.dir")), i)
 }
